@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> حَصِير </title>
+    <link rel="icon" type="image/png" href="fav.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css">
+    <!-- style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+        /* @import "https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap";
+        @import "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap";
+        @import "https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"; */
+        * {
+            direction: rtl;
+            font-family: 'Almarai', sans-serif;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: dosis, sans-serif
+        }
+
+        a {
+            text-decoration: none;
+            -webkit-transition: .5s;
+            transition: .5s
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: none
+        }
+
+        p:last-child {
+            margin-bottom: 0
+        }
+
+        .d-table {
+            width: 100%;
+            height: 100%
+        }
+
+        .d-table-cell {
+            vertical-align: middle
+        }
+
+        p,
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #ffffff
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        .logo {
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .main-banner {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background: linear-gradient(to right, #C4985000, #c49850cf 70%), url(This-or-That-townhouses-vs-villas-_-Cover-21-10-20110222.jpg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        @media only screen and (max-width:767px) {
+            .main-banner {
+        
+            background: linear-gradient(to bottom, #C4985000, #c49850ec 80%), url(This-or-That-townhouses-vs-villas-_-Cover-21-10-20110222.jpg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        }
+        .main-banner-content h1 {
+            line-height: 72px;
+            font-size: 89px;
+            font-weight: 700;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            margin: 100px 0;
+        }
+
+        .main-banner-content p {
+            max-width: 550px;
+            line-height: 1.8;
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 0;
+            margin-top: 30px
+        }
+
+        .count-down-timer {
+            margin-bottom: 25px;
+            margin-top: 50px
+        }
+
+        .count-down-timer #timer div {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            color: #C49850;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 55px;
+            font-weight: 700;
+            font-family: fantasy;
+        }
+
+        .count-down-timer #timer div span {
+            display: block;
+            text-transform: uppercase;
+            margin-top: -8px;
+            font-size: 14px;
+            font-weight: bold
+        }
+
+        .count-down-timer #timer div:last-child {
+            margin-right: 0
+        }
+
+        .count-down-timer #timer div:first-child {
+            margin-left: 0
+        }
+    </style>
+    <!-- responsive -->
+    <style>
+        @media only screen and (max-width:767px) {
+            .count-down-timer {
+                margin-top: 0
+            }
+
+            #timer {
+                display: flex;
+                gap: 24px;
+                justify-content: center;
+            }
+
+            .text-start {
+                text-align: center !important;
+            }
+
+            .count-down-timer #timer div {
+                font-size: 40px;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+
+            .count-down-timer #timer div span {
+                text-transform: capitalize;
+                margin-top: -4px
+            }
+
+            .main-banner-content {
+                text-align: start
+            }
+
+            .main-banner-content h1 {
+                line-height: 0px;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            .main-banner-content p {
+                max-width: 100%;
+                font-size: 16px;
+                text-align: center;
+                margin-top: 20px
+            }
+        }
+
+        @media only screen and (min-width:667px) and (max-width:767px) {
+            .main-banner {
+                padding-top: 44px;
+                padding-bottom: 110px
+            }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:767px) {
+            .count-down-timer #timer div {
+                font-size: 45px;
+                margin-left: 20px;
+                margin-right: 20px
+            }
+
+            .main-banner-content {
+                text-align: start
+            }
+
+            .main-banner-content h1 {
+                line-height: 53px;
+                font-size: 62px
+            }
+
+            .main-banner-content p {
+                font-size: 14px
+            }
+        }
+
+        @media only screen and (min-width:992px) and (max-width:1199px) {
+            .main-banner .col-lg-6 {
+                -ms-flex: 0 0 55%;
+                -webkit-box-flex: 0;
+                flex: 0 0 55%;
+                max-width: 55%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-banner">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="  mb-5 p-4 text-start">
+                                <img src="Logo.svg" class="logo">
+                            </div>
+                            <!-- <div class="count-down-timer">
+                                <div id="timer">
+                                    <div id="days"></div>
+                                    <div id="hours"></div>
+                                    <div id="minutes"></div>
+                                    <div id="seconds"></div>
+                                </div>
+                            </div> -->
+                            <div class="main-banner-content">
+                                <h1> حدث كبير قادم </h1>
+                                <p> قريباً •• نسخة جديدة مع مشاريع متميزة </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <!-- <script>
+        (function ($) {
+            "use strict";
+            function makeTimer() {
+                var endTime = new Date("mar 24, 2023 12:00:00 ");
+                var endTime = (Date.parse(endTime)) / 1000;
+                var now = new Date();
+                var now = (Date.parse(now) / 1000);
+                var timeLeft = endTime - now;
+                var days = Math.floor(timeLeft / 86400);
+                var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+                var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+                var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+                if (hours < "10") {
+                    hours = "0" + hours;
+                }
+                if (minutes < "10") {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < "10") {
+                    seconds = "0" + seconds;
+                }
+                $("#days").html(days + "<span> يوم </span>");
+                $("#hours").html(hours + "<span> ساعة </span>");
+                $("#minutes").html(minutes + "<span> دقيقة </span>");
+                $("#seconds").html(seconds + "<span> ثواني </span>");
+            }
+            setInterval(function () {
+                makeTimer();
+            }, 300);
+        }(jQuery));
+    </script> -->
+</body>
+
+</html>
